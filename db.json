@@ -1,0 +1,102 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "userId": 1,
+      "content": "Just setting up my Tweetty! #hello",
+      "likes": 5,
+      "retweets": 2,
+      "replies": [],
+      "createdAt": "2024-07-08T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "content": "Excited to join Tweetty and connect with everyone here!",
+      "likes": 10,
+      "retweets": 4,
+      "replies": [
+        {
+          "userId": 1,
+          "content": "Welcome to Tweetty!",
+          "createdAt": "2024-07-08T10:00:00Z"
+        }
+      ],
+      "createdAt": "2024-07-08T09:30:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "content": "This is a test tweet to show how Tweetty works.",
+      "likes": 3,
+      "retweets": 1,
+      "replies": [],
+      "createdAt": "2024-07-08T11:00:00Z"
+    },
+    {
+      "id": 1720791662851,
+      "userId": 1,
+      "content": "newtweets creat",
+      "likes": 0,
+      "retweets": 0,
+      "replies": [],
+      "createdAt": "2024-07-12T13:41:02.851Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "User1",
+      "name": "User1",
+      "handle": "@user1",
+      "profileImage": "/public/assets/images/image.jpg"
+    },
+    {
+      "id": 2,
+      "username": "User2",
+      "name": "User2",
+      "handle": "@User2",
+      "profileImage": "/public/assets/images/image.jpg"
+    },
+    {
+      "id": 3,
+      "username": "User3",
+      "name": "User3",
+      "handle": "@User3",
+      "profileImage": "/public/assets/images/image.jpg"
+    }
+  ],
+  "trends": [
+    {
+      "rank": 1,
+      "title": "#Microsoft363",
+      "tweetCount": "5,466 Tweets"
+    },
+    {
+      "rank": 2,
+      "title": "#VueJS",
+      "tweetCount": "8,123 Tweets"
+    },
+    {
+      "rank": 3,
+      "title": "#JavaScript",
+      "tweetCount": "10,456 Tweets"
+    }
+  ],
+  "suggestedUsers": [
+    {
+      "id": 1,
+      "username": "new_user1",
+      "name": "New User1",
+      "handle": "@new_user1",
+      "profileImage": "https://example.com/profiles/new_user1.jpg"
+    },
+    {
+      "id": 2,
+      "username": "new_user2",
+      "name": "New User2",
+      "handle": "@new_user2",
+      "profileImage": "https://example.com/profiles/new_user2.jpg"
+    }
+  ]
+}

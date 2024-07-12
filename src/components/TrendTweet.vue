@@ -1,0 +1,39 @@
+<template>
+    <div>
+      <div v-for="trend in trends" :key="trend.rank" class="trend-item">
+        <div class="flex">
+          <div class="flex-1">
+            <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">{{ trend.rank }} . Trending</p>
+            <h2 class="px-4 ml-2 w-48 font-bold">{{ trend.title }}</h2>
+            <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">{{ trend.tweetCount }}</p>
+          </div>
+          <div class="flex-1 px-4 py-2 m-2">
+            <a href="" class=" text-2xl rounded-full text-gray-400 hover:bg-blue-600 hover:text-blue-300 float-right">
+              <svg class="m-2 h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="border-gray-400">
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  import trendsData from '/db.json'; // Importer les données JSON
+  
+  export default {
+    name: "TrendTweet",
+    data() {
+      return {
+        trends: trendsData.trends
+      };
+    }
+  };
+  </script>
+  
+  <style scoped>
+  /* Ajoutez vos styles ici */
+  </style>
+  
